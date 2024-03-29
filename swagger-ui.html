@@ -1,0 +1,29 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swagger UI</title>
+    <!-- Include Swagger UI from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.12.3/swagger-ui-bundle.min.js" integrity="sha512-1uIfSvTzrMq2bhmgXBRm7FFCWEqTsI/XjEplOpI3w4WwfPnuf277+Sf4K4t9/Ohe8fZrbwZghVtiVbzU7Uk2yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.12.3/swagger-ui-standalone-preset.js" integrity="sha512-96oNfcSbxLsDN2UaXAHxRYdgFk3HRfXT5Nrx1/vHCV3yMVZ3/h1qlgXACJbMfI2lZwsRYSILO59WMVSnHG3I3w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.12.3/swagger-ui.min.css" integrity="sha512-pV+ep5Xjvc5jwqjAGERsdA00vVaP7eaKd2dYDSEe3sqe3v4ohjue4O51AnLvQGOU2hrlTo7tvLpHXLZfQa9Ubg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Swagger UI container -->
+    <div id="swagger-ui"></div>
+
+    <!-- Configure Swagger UI -->
+    <script>
+        const ui = SwaggerUIBundle({
+            url: "swagger_spec",
+            dom_id: '#swagger-ui',
+            presets: [
+                SwaggerUIBundle.presets.apis,
+                SwaggerUIStandalonePreset
+            ],
+            layout: "BaseLayout"
+        })
+    </script>
+</body>
+</html>`
